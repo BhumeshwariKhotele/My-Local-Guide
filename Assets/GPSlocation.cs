@@ -28,14 +28,6 @@ public class GPSlocation : MonoBehaviour
     }
 
 
-
-
-
-
-
-
-
-
     IEnumerator Start()
     {
         // First, check if user has location service enabled
