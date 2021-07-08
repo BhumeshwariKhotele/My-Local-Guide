@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
-using Newtonsoft.Json;
+//using Newtonsoft.Json;
 
 public class ListViewData : MonoBehaviour
 {
@@ -55,8 +55,10 @@ public class ListViewData : MonoBehaviour
     private void CreateListOfData(string JSONtext)
     {
         Root root = new Root();
-        Newtonsoft.Json.JsonConvert.PopulateObject(JSONtext, root);
+     //   Newtonsoft.Json.JsonConvert.PopulateObject(JSONtext, root);
         Debug.Log(root.firstName);
+
+
     }
 }
 
@@ -83,4 +85,4 @@ public class Root
     public int age { get; set; }
     public Address address { get; set; }
     public List<PhoneNumber> phoneNumbers { get; set; }
-}
+} 
